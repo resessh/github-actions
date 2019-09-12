@@ -1,0 +1,13 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  npm_token:
+    description: 'Your npm registry token'
+    required: false
+outputs:
+  needed:
+    description: 'Bool string of needed or not.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
