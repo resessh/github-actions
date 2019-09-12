@@ -1,0 +1,15 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  default-branch:
+    description: 'Your default branch.'
+    default: 'master'
+outputs:
+  needed:
+    description: 'Bool of needed or not.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.default-branch }}
+
